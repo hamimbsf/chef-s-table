@@ -12,7 +12,11 @@ const Recipes = ({ addRecipeQueue }) => {
       {recipes.map((recipe) => (
         <div key={recipe.recipe_id} className="card bg-base-100 border p-4">
           <figure className="rounded-md h-56 w-full ">
-            <img className="bg-cover bg-center" src={recipe.recipe_image} alt="Shoes" />
+            <img
+              className="bg-cover bg-center"
+              src={recipe.recipe_image}
+              alt="Shoes"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{recipe.recipe_name}</h2>
